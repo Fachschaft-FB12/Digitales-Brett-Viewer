@@ -6,7 +6,6 @@ summary:    This is an empty post to illustrate the pagination component with Pi
 categories: jekyll pixyll
 ---
 
-
 ### [IT Job und Fachmesse](./Jobmesse_IT-Flyer.pdf)
 der Fachbereich Informatik und Mathematik der Goethe-Universität Frankfurt veranstaltet auch in diesem Jahr wieder eine Online-Jobmesse: Am Donnerstag, 24. Juni 2021 findet die IT Fach- und Jobmesse Enter_Zukunft_IT statt.  
 Im Rahmen der Messe haben Studierende, Absolventen und Absolventinnen sowie Fach- und Führungskräfte, die Gelegenheit, sich über Jobmöglichkeiten und Neuigkeiten in der IT-Branche zu informieren. 
