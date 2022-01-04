@@ -2,10 +2,11 @@
 layout:     post
 title:      Helden der Meere Vortrag
 date:       2014-06-08 11:21:29
-summary:    This is an empty post to illustrate the pagination component with Pixyll.
+summary:    Die Netflix Dokumentation "Seaspiracy" hat in den letzten Wochen große Aufmerksamkeit auf die Meere gelenkt...
 categories: jekyll pixyll
 ---
-### [Helden der Meere Vortrag](./Blue_Awareness.jpeg)
+
+### Helden der Meere Vortrag
 
 Liebe Studierende, Dozierende, Interessierte und Ozeanbegeisterte,
 
