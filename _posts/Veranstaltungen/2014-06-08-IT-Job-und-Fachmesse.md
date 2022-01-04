@@ -2,7 +2,7 @@
 layout:     post
 title:      IT Job und Fachmesse
 date:       2014-06-08 11:21:29
-summary:    This is an empty post to illustrate the pagination component with Pixyll.
+summary:    Der Fachbereich Informatik und Mathematik der Goethe-Universität Frankfurt veranstaltet auch in diesem Jahr wieder eine Online-Jobmesse.
 categories: jekyll pixyll
 ---
 
