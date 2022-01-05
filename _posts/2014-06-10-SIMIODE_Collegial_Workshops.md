@@ -7,4 +7,4 @@ categories: jekyll pixyll
 ---
 ### [SIMIODE](./SIMIODE_Collegial_Workshops.md)
 
-<embed src="Babiel_Anzeige_2020_Junior_PM_rgb.pdf" type="application/pdf"\>
+<embed src="Babiel_Anzeige_2020_Junior_PM_rgb.pdf" type="application/pdf">
