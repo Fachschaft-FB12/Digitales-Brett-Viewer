@@ -2,7 +2,7 @@
 layout:     post
 title:      Babiel Anzeige 2020 Junior
 date:       2014-06-08 11:21:29
-summary:    
+summary:                       
 categories: jekyll
 ---
 
