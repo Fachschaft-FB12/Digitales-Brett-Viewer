@@ -2,7 +2,7 @@
 layout:     post
 title:      ITK Werkstudententätigkeit
 date:       2022-01-07 16:21:29
-summary:    Im Rahmen einer Werktstundentätigkeit soll eine kamerabasierte ROS Plattform für Fahrassistenz (ADAS) in Betrieb ...
+summary:    Im Rahmen einer Werktstundentätigkeit soll eine kamerabasierte ROS Plattform für Fahrassistenz (ADAS) in Betrieb...
 categories: Stellenausschreibung
 ---
 
