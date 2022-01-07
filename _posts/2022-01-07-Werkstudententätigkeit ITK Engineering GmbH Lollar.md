@@ -32,7 +32,7 @@ Studium der Fachrichtung Informatik, Mathematik, Elektrotechnik, Mechatronik ode
 ### Sprachen: 
 gute Deutsch- und Englischkenntnisse
 
-##Zusätzliche Informationen
+## Zusätzliche Informationen
 
 Beginn: ab sofort / nach Absprache
 Dauer: min. 6 Monate - 15h/Woche
