@@ -1,10 +1,10 @@
 # Site settings
-title:       Fachschaft Mathematik und Informatik
+title:       Digitales Brett - Fachschaft FB 12
 email:       fachschaft@mathematik.uni-marburg.de
 author:      Fachschaft Mathematik und Informatik
 description: "Die Fachschaft erhält in unregelmäßigen Abständen Informationen zu Jobs, Praktika sowie Stipendien aber auch Messen und ähnlichem verschiedenen Firmen oder Stiftungen."
 baseurl:     "/"
-url:         "https://brett.fs-matheinfo.de/"
+url:         "ttps://brett.fs-matheinfo.de/"
 date_format: "%b %-d, %Y"
 header_pages:
  - about.md
