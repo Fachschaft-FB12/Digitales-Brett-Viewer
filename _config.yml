@@ -1,7 +1,7 @@
 # Site settings
 title:       FS MatheInfo
-email:       your_email@example.com
-author:      John Otander
+email:       fachschaft@mathematik.uni-marburg.de
+author:      Fachschaft Mathe&Info
 description: "A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff."
 baseurl:     "/Digitales-Brett-Viewer"
 url:         "https://fachschaft-fb12.github.io"
