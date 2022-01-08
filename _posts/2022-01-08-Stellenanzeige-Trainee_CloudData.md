@@ -2,7 +2,7 @@
 layout:     post
 title:      Stellenanzeige-Trainee_CloudData.pdf
 date:       2022-01-08 13:15:38
-summary:    Sechs Monate, die es in sich haben – und nach denen Du es drauf hast: um als Consultant mit Schwerpunkt Cloud Data Warehouse und Data Engineering durchzustarten.
+summary:    Sechs Monate, die es in sich haben – und nach denen Du es drauf hast: um als Consultant mit ...
 categories: Stellenausschreibung
 ---
 
