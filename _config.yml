@@ -11,7 +11,7 @@ default-image: webjeda-logo-big.jpg # If there is no featured image in a post th
 # Build settings
 markdown: kramdown
 permalink: /:title/
-paginate: 6
+paginate: 24
 paginate_path: /page:num/
 
 # Tracker
