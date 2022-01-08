@@ -2,7 +2,7 @@
 layout:     post
 title:      Feminism is a battlefield
 date:       2022-01-07 16:21:29
-summary:    Wie erforschen wir Konflikte der Queer- und Frauenbewegungen? "Wie erforschen, was sich bewegt?" (Susanne Maurer)
+summary:    Wie erforschen wir Konflikte der Queer- und Frauenbewegungen? "Wie erforschen,...
 categories: Initiative
 ---
 
