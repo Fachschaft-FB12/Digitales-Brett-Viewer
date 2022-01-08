@@ -17,8 +17,8 @@
 
       <li>
         <p>
-          <a href="{{ post.url  | relative_url }}">{{ post.title }}</a
-          ><p><small>{{ post.date | date_to_string }}</small></p>
+          <a href="{{ post.url  | relative_url }}">{{ post.title | strip_html | strip_newlines}}</a
+          ><br><small>{{ post.date | date_to_string }}</small>
         </p>
       </li>
 
