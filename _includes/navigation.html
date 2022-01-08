@@ -1,15 +1,24 @@
-{% assign default_paths = site.pages | map: "path" %}
-{% assign page_paths = site.header_pages | default: default_paths %}
+<nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+  <a class="navbar-brand" href={{"/" | relative_url}}>Digitales Brett</a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-{% for path in page_paths %}
-    
-    {% assign item = site.pages | where: "path", path | first %}
-    
-    {% if item.title and page.title == item.title %}
-        <a class="nav-active" href="{{ item.url | relative_url }}">{{ item.title }}</a>
-    {% elsif item.title %}
-        <a class="nav-link" href="{{ item.url | relative_url }}">{{ item.title }}</a>
-    {% endif %}
-
-    
-{% endfor %}
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href={{"/" | relative_url}}
+          >Startseite <span class="sr-only">(current)</span></a
+        >
+      </li>
+    </ul>
+  </div>
+</nav>

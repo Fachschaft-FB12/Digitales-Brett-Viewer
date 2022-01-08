@@ -1,23 +1,17 @@
-<footer class="center">
-  <div class="measure">
-    <small>
-      Fachschaft FB 12 Uni Marburg - <a target="_blank"
-        href="https://datenschutz.fs-matheinfo.de">Datenschutzerklärung</a><br>
-
-      Theme crafted with &lt;3 by <a href="https://johno.com/">John Otander</a>.
-      &lt;/&gt; available on <a href="https://github.com/johno/pixyll">GitHub</a><br>
-    </small>
+<footer class="mt-4 mt-md-5">
+  <div class="container">
+    <div class="row p20">
+      <div class="col-md-4 text-center mt25"></div>
+      <p>
+        Fachschaft FB 12 Uni Marburg -
+        <a target="_blank" href="https://datenschutz.fs-matheinfo.de">Datenschutzerklärung</a> - 
+        <a target="_blank" href="http://webjeda.com"
+          ><img
+            src="https://img.shields.io/badge/Built%20by-webjeda-blue.svg"
+            alt="{{site.built-by}}"
+        /></a>
+      </p>
+      </div>
+    </div>
   </div>
 </footer>
-{% if site.enable_anchorjs %}
-<!-- AnchorJS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.0.0/anchor.min.js"></script>
-<script>
-  anchors.options.visible = 'always';
-  anchors.add('article h2, article h3, article h4, article h5, article h6');
-</script>{% endif %}
-<script type="text/javascript">
-  if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("{{ '/sw.js' | relative_url }}")
-  }
-</script>

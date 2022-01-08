@@ -1,0 +1,23 @@
+{
+  "short_name": "Digitales Brett - Fachschaft FB 12",
+  "name": "Digitales Brett - Fachschaft FB 12",
+  "description": "Die Fachschaft erhält in unregelmäßigen Abständen Informationen zu Jobs, Praktika sowie Stipendien aber auch Messen und ähnlichem verschiedenen Firmen oder Stiftungen.
+",
+  "icons": [
+    {
+      "src": "/splash-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "/favicon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#ffffff"
+}
