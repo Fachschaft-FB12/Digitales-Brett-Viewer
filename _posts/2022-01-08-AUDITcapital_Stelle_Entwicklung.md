@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      AUDITcapital_Stelle_Entwicklung.pdf
+title:      AUDITcapital_Stelle_Entwicklung
 date:       2022-01-08 13:15:38
 summary:    Als junges dynamisches Unternehmen wollen wir die Energiewende und nachhaltige Vorhaben voranbringen.
 categories: Stellenausschreibung
