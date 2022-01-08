@@ -6,4 +6,4 @@ summary:    Wie erforschen wir Konflikte der Queer- und Frauenbewegungen? "Wie e
 categories: Initiative
 ---
 
-<object data="{{ site.url }}/pdfs/Call for Contribution - Interdisziplinärer Workshop - Feminism is a battlefield(1).pdf" width="1000" height="1000" type='application/pdf'></object>
+<object data="{{ site.url }}/pdfs/Call for Contribution - Interdisziplinärer Workshop - Feminism is a battlefield(1).pdf" width="650" height="800" type='application/pdf'></object>
