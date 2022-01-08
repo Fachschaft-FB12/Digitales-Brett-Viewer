@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      Stellenanzeige-Trainee_CloudData.pdf
-date:       2022-01-08 13:15:38
+title:      Stellenanzeige-Trainee_CloudData
+date:       2022-01-07 16:21:29
 summary:    Sechs Monate, die es in sich haben – und nach denen Du es drauf hast: um als Consultant mit ...
 categories: Stellenausschreibung
 ---
