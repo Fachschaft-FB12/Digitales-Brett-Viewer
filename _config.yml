@@ -3,7 +3,7 @@ email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   Die Fachschaft erhält in unregelmäßigen Abständen Informationen zu Jobs, Praktika sowie Stipendien aber auch Messen und ähnlichem verschiedenen Firmen oder Stiftungen.
   
-url: "http://brett.fs-matheinfo.de"
+url: "https://brett.fs-matheinfo.de"
 
 #sidebar
 default-image: webjeda-logo-big.jpg # If there is no featured image in a post then this image will be showed. Also on all pages this image will be showed. Use a 500x250 image.
