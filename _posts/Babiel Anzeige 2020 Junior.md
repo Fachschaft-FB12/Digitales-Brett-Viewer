@@ -6,4 +6,4 @@ summary:    Mehr lesen...
 categories: Stellenausschreibungen
 ---
 
-<object data="{{ site.url }}/Digitales-Brett-Viewer/Babiel_Anzeige_2020_Junior_PM_rgb.pdf" width="1000" height="1000" type='application/pdf'></object>
+<object data="{{ site.url }}/Digitales-Brett-Viewer/pdfs/Babiel_Anzeige_2020_Junior_PM_rgb.pdf" width="1000" height="1000" type='application/pdf'></object>
