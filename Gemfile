@@ -1,9 +1,8 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-gem "kramdown"
-gem "kramdown-parser-gfm"
-gem "rouge"
-gem "jekyll"
-gem "jekyll-paginate"
-gem "jekyll-paginate-content"
-gem "json"
+# A simple Ruby Gem to bootstrap dependencies for setting up and
+# maintaining a local Jekyll environment in sync with GitHub Pages
+# https://github.com/github/pages-gem
+gem 'github-pages'
+
+gem "webrick", "~> 1.7"
