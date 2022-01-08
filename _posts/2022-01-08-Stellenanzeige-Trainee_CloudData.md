@@ -7,3 +7,4 @@ categories: Stellenausschreibung
 ---
 
 <object data="{{ site.url }}/pdfs/Stellenanzeige-Trainee_CloudData.pdf" width="650" height="800" type='application/pdf'></object>
+(/pdfs/Stellenanzeige-Trainee_CloudData.pdf)
