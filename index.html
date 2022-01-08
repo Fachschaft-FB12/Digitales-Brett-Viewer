@@ -3,6 +3,15 @@ layout: default
 ---
 
 <div class="home py-4 py-md-5">
+  {% if site.subtitle %}
+  <div class="alert alert-info" role="info">
+    <h4 class="alert-heading">{{site.subtitle}}</h4>
+    <hr>
+    {{site.description}}
+  </div>
+  <br>
+  <br>
+  {% endif %} 
   <div class="row">
     {% for post in paginator.posts %}   
       <div class="col-12 col-md-6 col-lg-4">
