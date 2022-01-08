@@ -2,7 +2,7 @@
 layout:     post
 title:      Kritischen Biolog:innen
 date:       2021-11-10 16:21:29
-summary:    wir sind eine relativ neu gegründete Studentische Initiative, die sich unter dem Namen „kritische Biolog:innen“ formiert hat.
+summary:    Wir sind eine relativ neu gegründete Studentische Initiative, die sich unter dem Namen „kritische Biolog:innen“ formiert hat.
 categories: Initiative
 ---
 
