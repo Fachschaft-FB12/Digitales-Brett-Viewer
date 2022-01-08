@@ -6,4 +6,4 @@ summary:    Sechs Monate, die es in sich haben – und nach denen Du es drauf ha
 categories: Stellenausschreibung
 ---
 
-(/pdfs/Stellenanzeige-Trainee_CloudData.pdf)
+(/assets/Stellenanzeige-Trainee_CloudData.pdf)
