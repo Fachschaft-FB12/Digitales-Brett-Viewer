@@ -2,8 +2,15 @@
 layout:     post
 title:      Stellenanzeige nexineer digital GmbH
 date:       2022-01-08 13:15:38
-summary:    Die Softplan Informatik GmbH ist einer der führenden Anbieter für kommunale Geoinformationssysteme (GIS) in Deutschland.
+summary:    nexineer digital ist der digitale Inkubator der KAMAX Gruppe, ein traditionell erfolgreiches Unternehmen in der Maschinenbaubranche.
+pdf:        Stellenanzeige nexineer digital GmbH.pdf
 categories: Stellenausschreibung
 ---
 
-<object data="{{ site.url }}/pdfs/Stellenanzeige nexineer digital GmbH.pdf" width="650" height="800" type='application/pdf'></object>
+<a class="btn btn-primary" href="{{ site.url }}/pdfs/{{page.pdf}}">PDF anzeigen</a>
+
+<h3>Vorschau (nur auf Desktop-Geräten)</h3>
+<div class="d-none d-sm-block">
+    <object data="{{ site.url }}/pdfs/{{page.pdf}}" width="100%" height="750" type='application/pdf'>
+    </object>
+</div>
