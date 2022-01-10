@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      Title
-date:       2022-01-08 13:15:38
+title:      The Politics of Cybersecurity in the Middle East
+date:       2022-01-10 13:15:38
 summary:    James Shires zeigt auf, wie der Begriff der Cybersicherheit von Staaten, Unternehmen und ...
 categories: Veranstaltung
 ---
