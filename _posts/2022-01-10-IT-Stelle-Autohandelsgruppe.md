@@ -1,10 +1,11 @@
 ---
 layout:     post
-title:      Title
-date:       2022-01-08 13:15:38
-summary:    Summary
-pdf:        Name.pdf
-categories: categorie
+title:      IT Stelle Autohaus Nau
+date:       2022-01-10 13:15:38
+summary:    Aufbau der Hardware, wie z.B. Terminals, Router und systematische Verbindung ...
+pdf:        IT-Stellenangebot.pdf
+categories: Stellenausschreibung
+tags:		Stellenausschreibung Unternehmen Informatik
 ---
 
 <!-- ###############
