@@ -7,4 +7,4 @@ categories: Studie
 ---
 
 [PDF runterladen](/pdfs/Infos_Studie_Auswirkungen_Corona.pdf)
-<object data="{{ site.url }}/pdfs/Infos_Studie_Auswirkungen_Corona.pdf" width="650" height="800" type='application/pdf'></object>
+<object data="{{ site.url }}/pdfs/Infos_Studie_Auswirkungen_Corona.pdf" width="100%" height="1010" type='application/pdf'></object>
