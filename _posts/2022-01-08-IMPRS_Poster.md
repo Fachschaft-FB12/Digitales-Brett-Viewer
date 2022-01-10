@@ -5,6 +5,7 @@ date:       2022-01-08 13:15:38
 summary:    International Max Planck Research School for the Mechanisms of Mental Function and Dysfunction in Tübingen
 pdf:        IMPRS_Poster.pdf
 categories: Stellenausschreibung
+tags:		Stellenausschreibung Interdisziplinär
 ---
 
 <a class="btn btn-primary" href="{{ site.url }}/pdfs/{{page.pdf}}">PDF anzeigen</a>
