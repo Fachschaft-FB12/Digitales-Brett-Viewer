@@ -29,8 +29,16 @@ layout: default
                   {{ post.summary | strip_html | strip_newlines | truncate: 150 }}
                 {% else %}
                   {{ post.excerpt | strip_html | strip_newlines | truncate: 150 }}
-                {% endif %} 
-                </p>
+                {% endif %}
+                <h5>
+                  <row>                
+                    {% for categorie in post.categories %}
+                      {% if categorie != "" %}
+                        <span class="badge badge-pill badge-light">#{{ categorie }}</span>
+                      {% endif %}
+                    {% endfor %} 
+                  </row>
+                </h5>
             </div>
           </div>
         </div>
