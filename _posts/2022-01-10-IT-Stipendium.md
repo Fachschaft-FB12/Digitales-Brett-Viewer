@@ -2,7 +2,7 @@
 layout:     post
 title:      IT Stipendium
 date:       2022-01-10 11:15:38
-summary:    100 € pro Monat ein Jahr lang Bewerbungsschluss: 31.01 .2022
+summary:    100 € pro Monat ein Jahr lang Bewerbungsschluss: 31.01.2022
 pdf:        its_jan_2022.pdf
 categories: Stipendium
 ---
