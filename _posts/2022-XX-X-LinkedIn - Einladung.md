@@ -1,10 +1,10 @@
 ---
 layout:     post
-title:      Title
+title:      Begin your career @ LinkedIn
 date:       2022-01-08 13:15:38
-summary:    Summary
-pdf:        Name.pdf
-tags:		
+summary:    LinkedIn sucht für das Programm noch deutschsprachige Studierende (Fokus: Mathe, Informatik, BWL / WiWi) die Lust haben für 12 Wochen nach Dublin zu gehen, um in ein führendes Tech-Unternehmen einzutauchen.
+pdf:        LinkedIn - Einladung.pdf
+tags:		Stellenanzeige Unternehmen
 ---
 
 <!-- ###############
