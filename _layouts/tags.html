@@ -22,8 +22,9 @@ layout: default
   {% assign tags_list = nil %}
 </div>
 
+
 {% for tag in sorted_tags  %}
-  
+
 <a class="post-anchor" id="{{ tag[0] | slugify }}"></a>
   
     <h3>#{{ tag[0] }}</h3>
