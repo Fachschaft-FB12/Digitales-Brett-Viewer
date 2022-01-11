@@ -21,6 +21,7 @@ layout: default
   {% assign tags_list = nil %}
 </div>
 
+{% assign sortedTag = site.tags[0] | sort %}
 {% for tag in site.tags  %}
   
 <a class="post-anchor" id="{{ tag[0] | slugify }}"></a>
