@@ -1,0 +1,52 @@
+---
+layout: default
+---
+
+{% assign date_format = site.date_format | default: "%m/%d/%Y" %}
+
+<div class="h4 p20">
+  {% assign tags_list = site.tags %}
+    {% if tags_list.first[0] == null %}
+    
+    {% for tag in tags_list %}
+          <a class="m-1 btn btn-outline-primary" href="#{{ tag | slugify }}">#{{ tag }}</a>
+
+      {% endfor %}
+    {% else %}
+      {% for tag in tags_list %}
+          <a  class="m-1 btn btn-outline-primary" href="#{{ tag[0] | slugify }}">#{{ tag[0] }}</a>
+      {% endfor %}
+    
+    {% endif %}
+  {% assign tags_list = nil %}
+</div>
+
+{% for tag in site.tags  %}
+  
+<a class="post-anchor" id="{{ tag[0] | slugify }}"></a>
+  
+    <h3>#{{ tag[0] }}</h3>
+
+  <div class="home">
+    <div class="row">
+      {% assign pages_list = tag[1] %}
+      {% for post in pages_list %}
+        <div class="col-12 col-md-6 col-lg-4">
+          {% if post.title != null and post.is_generated != true %}
+            {% if group == null or group == post.group %}
+            <div class="card rounded overflow-hidden">
+                <div class="card-body">
+                    <a class="index-anchor" href="{{ site.url }}{{ site.baseurl }}{{ post.url }}"><h6 class="panel-title font-weight-bold">{{ post.title | truncate: 75 }}</h6><span class="entry-date"></a>
+                    <small>{{ post.date | date_to_string }}</small>
+                </div>
+              </div>
+            {% endif %}
+          {% endif %}
+        </div>
+      {% endfor %}
+      {% assign pages_list = nil %}
+      {% assign group = nil %}
+    </div>
+</div> 
+
+{% endfor %}
