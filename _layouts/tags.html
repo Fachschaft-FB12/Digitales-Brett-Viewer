@@ -7,6 +7,7 @@ layout: default
 {% assign sorted_tags = site.tags | sort %}
 <div class="h4 p20">
   {% assign tags_list = sorted_tags %}
+
     {% if tags_list.first[0] == null %}
     
     {% for tag in tags_list %}
@@ -21,7 +22,6 @@ layout: default
     {% endif %}
   {% assign tags_list = nil %}
 </div>
-
 
 {% for tag in sorted_tags  %}
 
