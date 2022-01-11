@@ -5,7 +5,7 @@ layout: default
 {% assign date_format = site.date_format | default: "%m/%d/%Y" %}
 
 <div class="h4 p20">
-  {% assign tags_list = site.tags %}
+  {% assign tags_list = site.tags | sort %}
     {% if tags_list.first[0] == null %}
     
     {% for tag in tags_list %}
@@ -21,8 +21,8 @@ layout: default
   {% assign tags_list = nil %}
 </div>
 
-{% assign sortedTag = site.tags[0] | sort %}
-{% for tag in site.tags  %}
+{% assign sortedTags = site.tags[0] | sort %}
+{% for tag in sortedTags  %}
   
 <a class="post-anchor" id="{{ tag[0] | slugify }}"></a>
   
