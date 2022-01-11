@@ -3,15 +3,7 @@ layout: default
 ---
 
 <div class="home py-4 py-md-5">
-  {% if site.subtitle %}
-  <div class="alert alert-info" role="info">
-    <h4 class="alert-heading">{{site.subtitle}}</h4>
-    <hr>
-    {{site.description}}
-  </div>
   <br>
-  <br>
-  {% endif %} 
   <div class="row">
     {% for post in paginator.posts %}   
       <div class="col-12 col-md-6 col-lg-4">
@@ -30,15 +22,13 @@ layout: default
                 {% else %}
                   {{ post.excerpt | strip_html | strip_newlines | truncate: 150 }}
                 {% endif %}
-                <h5>
-                  <row>                
-                    {% for categorie in post.categories %}
-                      {% if categorie != "" %}
-                        <span class="badge badge-pill badge-light">#{{ categorie }}</span>
+                  <div class="h5">                
+                    {% for tag in post.tags %}
+                      {% if tag %}
+                        <a href="tags/#{{ tag | slugify}}" class="badge badge-pill badge-light">#{{ tag }}</a>
                       {% endif %}
-                    {% endfor %} 
-                  </row>
-                </h5>
+                    {% endfor %}
+                  </div>
             </div>
           </div>
         </div>
@@ -47,7 +37,16 @@ layout: default
     {% endfor %}
   </div>
 </div> 
-    
+{% if site.subtitle %}
+<div class="alert alert-info" role="info">
+  <h4 class="alert-heading">{{site.subtitle}}</h4>
+  <hr>
+  Die Fachschaft erhält in unregelmäßigen Abständen Informationen zu Jobs, Praktika sowie Stipendien, aber auch Veranstaltungen und Ähnlichem von Firmen, Universitäten oder Stiftungen.
+  <br><br>Kontakt: <a href="mailto://fachschaft@mathematik.uni-marburg.de">fachschaft@mathematik.uni-marburg.de</a>  
+</div>
+<br>
+<br>
+{% endif %} 
   <div class="row justify-content-center">
     <div class="col-md-4">
         {% if paginator.total_pages > 1 %}

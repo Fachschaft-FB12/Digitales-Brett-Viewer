@@ -1,5 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
   <a class="navbar-brand" href={{"/" | relative_url}}>Digitales Brett</a>
+  <smaller>Fachschaft Mathematik und Informatik, Universität Marburg</smaller>
   <button
     class="navbar-toggler"
     type="button"
@@ -15,14 +16,14 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link" href={{"/" | relative_url}}
-          >Startseite <span class="sr-only">(current)</span></a
-        >
+        <a class="nav-link" href={{"/" | relative_url}}>Startseite <span class="sr-only">(current)</span></a>
       </li>
-      <a class="nav-link" href={{"/feed.xml" | relative_url}}
-      >RSS-Feed</a
-    >
-  </li>
+      <li class="nav-item"></li>
+        <a class="nav-link" href={{"/tags" | relative_url}}>Tags</a>
+      </li>
+      <li class="nav-item"></li>
+        <a class="nav-link" href={{"/feed.xml" | relative_url}}>RSS-Feed</a>
+    </li>
     </ul>
   </div>
 </nav>

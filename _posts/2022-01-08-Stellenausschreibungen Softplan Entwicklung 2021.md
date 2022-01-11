@@ -4,7 +4,7 @@ title:      Stellenausschreibungen Softplan Entwicklung 2021
 date:       2022-01-08 13:15:38
 summary:    Die Softplan Informatik GmbH ist einer der führenden Anbieter für kommunale Geoinformationssysteme (GIS) in Deutschland.
 pdf:        Stellenausschreibungen Softplan Entwicklung 2021.pdf
-categories: Stellenausschreibung
+tags: Stellenausschreibung
 ---
 
 <a class="btn btn-primary" href="{{ site.url }}/pdfs/{{page.pdf}}">PDF anzeigen</a>

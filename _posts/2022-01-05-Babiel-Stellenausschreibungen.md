@@ -3,8 +3,7 @@ layout:     post
 title:      Babiel Stellenausschreibungen
 date:       2022-01-05 11:21:29
 summary:    babiel ist seit mehr als 30 Jahren erfolgreich als Digitalagentur in den Bereichen Onlinekommunikation und E-Commerce für namhafte Konzerne und öffentliche Auftraggeber tätig.
-categories: Stellenausschreibungen
-tags:		Stellenausschreibungen Unternehmen Informatik
+tags:		Stellenausschreibung Unternehmen Informatik
 ---
 <a class="btn btn-primary" href="{{ site.url }}/pdfs/Babiel_Anzeige_2020_Junior_PM.pdf">PDF anzeigen</a>
 
