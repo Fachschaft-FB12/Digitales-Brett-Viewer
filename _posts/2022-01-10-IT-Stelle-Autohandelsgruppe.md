@@ -8,9 +8,13 @@ categories: Stellenausschreibung
 tags:		Stellenausschreibung Unternehmen Informatik
 ---
 
-<!-- ###############
+{% comment %}
+!################################!
+
 Do not edit the code below! Only enter the name of the pdf in row 6 and upload the pdf to /pdfs/
-###############' -->
+
+!################################!
+{% endcomment %} 
 
 <a class="btn btn-primary" href="{{ site.url }}/pdfs/{{page.pdf}}">PDF anzeigen</a>
 
