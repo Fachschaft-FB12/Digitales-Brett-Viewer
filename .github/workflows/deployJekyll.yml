@@ -11,6 +11,11 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - uses: actions/checkout@v2
+        with:
+          repository: Fachschaft-FB12/Digitales-Brett
+          path: /
+
       # Use GitHub Actions' cache to cache dependencies on servers
       - uses: actions/cache@v2
         with:
