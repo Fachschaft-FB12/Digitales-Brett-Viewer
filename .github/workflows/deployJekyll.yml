@@ -14,7 +14,12 @@ jobs:
       - uses: actions/checkout@v2
         with:
           repository: Fachschaft-FB12/Digitales-Brett
-          path: ./
+          path: content
+          
+      - name: Access cloned repository content
+        run: |
+          cp "./content" "/home/runner/work/Digitales-Brett-Viewer/Digitales-Brett-Viewer"
+          done
 
       # Use GitHub Actions' cache to cache dependencies on servers
       - uses: actions/cache@v2
