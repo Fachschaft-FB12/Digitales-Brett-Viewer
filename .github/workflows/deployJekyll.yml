@@ -21,9 +21,8 @@ jobs:
           
       - name: Access cloned repository content
         run: |
-          ls
-          mv content/* .
-          ls
+          mv content/attachments .
+          mv content/* _post
 
       # Use GitHub Actions' cache to cache dependencies on servers
       - uses: actions/cache@v2
