@@ -1,10 +1,11 @@
-name: Build and Deploy to Github Pages
+name: Custom Build and Deploy to Github Pages
 
 on:
   push:
     branches:
-      - main  # Here source code branch is `master`, it could be other branch
-      
+      - main
+  
+  # Register on dispatch from Digitales-Brett
   repository_dispatch:
     types: [triggerJekyllBuild]
 
@@ -12,19 +13,22 @@ jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
     steps:
+    
+      # Checkout this repository
       - uses: actions/checkout@v2
-
+      
+      # Checkout content repository
       - uses: actions/checkout@v2
         with:
           repository: Fachschaft-FB12/Digitales-Brett
           path: content
           
-      - name: Access cloned repository content
+      # Move the data from content to the desired directory    
+      - name: Move attachments and posts data
         run: |
           mv content/attachments .
           mv content/* _posts
 
-      # Use GitHub Actions' cache to cache dependencies on servers
       - uses: actions/cache@v2
         with:
           path: vendor/bundle
@@ -32,8 +36,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gems-
 
-      # Use GitHub Deploy Action to build and deploy to Github
+      # Copy the Jekyll build to branch gh-pages
       - uses: jeffreytse/jekyll-deploy-action@v0.3.1
         with:
           provider: 'github'
-          token: ${{ secrets.GITHUB_TOKEN }} # It's your Personal Access Token(PAT)
