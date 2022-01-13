@@ -18,7 +18,7 @@ jobs:
           
       - name: Access cloned repository content
         run: |
-          cp "./content" "/home/runner/work/Digitales-Brett-Viewer/Digitales-Brett-Viewer"
+          cp -r "/home/runner/work/Digitales-Brett-Viewer/Digitales-Brett-Viewer/content/" "/home/runner/work/Digitales-Brett-Viewer/Digitales-Brett-Viewer"
           done
 
       # Use GitHub Actions' cache to cache dependencies on servers
