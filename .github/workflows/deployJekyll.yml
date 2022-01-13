@@ -20,7 +20,7 @@ jobs:
         run: |
           ls
           mv content/* .
-          done
+          ls
 
       # Use GitHub Actions' cache to cache dependencies on servers
       - uses: actions/cache@v2
