@@ -18,6 +18,7 @@ jobs:
           
       - name: Access cloned repository content
         run: |
+          ls
           cp -r "/home/runner/work/Digitales-Brett-Viewer/Digitales-Brett-Viewer/content/" "/home/runner/work/Digitales-Brett-Viewer/Digitales-Brett-Viewer"
           done
 
