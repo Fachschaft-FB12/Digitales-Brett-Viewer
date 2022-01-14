@@ -23,6 +23,6 @@ for post in xml.entries:
 if(len(embeds) > 0):
     response = requests.post("https://discord.com/api/webhooks/",
             json={
-                "content" : "**Auf dem Digitalen-Brett wurden " + len(embeds) + " neue Artikel veröffentlicht**:",
+                "content" : "**Auf dem Digitalen-Brett wurden " + str(len(embeds)) + " neue Artikel veröffentlicht**:",
                 "embeds": embeds
             })
