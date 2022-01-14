@@ -21,8 +21,12 @@ for post in xml.entries:
         })
 
 if(len(embeds) > 0):
+    if(len(embeds) > 1):
+        message = "**Auf dem Digitalen-Brett wurden " + str(len(embeds)) + " neue Artikel veröffentlicht**:"
+    else:
+        message = "**Auf dem Digitalen-Brett wurde 1 neuer Artikel veröffentlicht**:"
     response = requests.post("https://discord.com/api/webhooks/",
             json={
-                "content" : "**Auf dem Digitalen-Brett wurden " + str(len(embeds)) + " neue Artikel veröffentlicht**:",
+                "content" : message,
                 "embeds": embeds
             })
