@@ -1,0 +1,25 @@
+name: Get todays posts
+on:
+  schedule:
+    - cron: "* 10 * * *"
+    
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: setup python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+          cache: 'pip'
+      - run: pip install -r /python/requirements.txt
+      - name: execute rssfeed.py
+        run: |
+          python /python/rssfeed.py
+        env:
+          RSS_URL: "https://brett.fs-matheinfo.de/feed.xml"
+          DISCORD_URL: ${{ secrets.DISCORD_WEBHOOK }}
