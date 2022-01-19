@@ -1,32 +1,29 @@
 import feedparser
 from datetime import datetime,timedelta
 from time import mktime
-import re
 import requests
+import os
+from dotenv import load_dotenv
 
-xml = feedparser.parse("https://brett.fs-matheinfo.de/feed.xml")
-
-embeds = []
+load_dotenv()
+xml = feedparser.parse(os.environ.get("RSS_URL"))
+relevantPosts = []
 
 for post in xml.entries:
-    dt = datetime.fromtimestamp(mktime(post.published_parsed))
-    last_hour_date_time = datetime.now() - timedelta(hours = 24)
-    if(last_hour_date_time < dt):
-        cleantext = re.sub('<[^<]+?>', '', post.description).strip()[:200] + "..."
-        embeds.append({
-            "title": post.title,
-            "description": cleantext,
-            "url": post.link,
-            "color": 15258703
-        })
+    datePost = datetime.fromtimestamp(mktime(post.published_parsed))
+    twenyFourHoursBack = datetime.now() - timedelta(hours = 24)
+    if(twenyFourHoursBack < datePost):
+        description = "[" + post.title + "]" + "(<" + post.link + ">)\n"
+        description += post.summary + "\n\n"
+        relevantPosts.append(description)
 
-if(len(embeds) > 0):
-    if(len(embeds) > 1):
-        message = "**Auf dem Digitalen-Brett wurden " + str(len(embeds)) + " neue Artikel veröffentlicht**:"
+if(len(relevantPosts) > 0):
+    if(len(relevantPosts) > 1):
+        message = "**Auf dem Digitalen-Brett wurden " + str(len(relevantPosts)) + " neue Artikel veröffentlicht**:\n\n"
     else:
-        message = "**Auf dem Digitalen-Brett wurde 1 neuer Artikel veröffentlicht**:"
-    response = requests.post("https://discord.com/api/webhooks/",
-            json={
-                "content" : message,
-                "embeds": embeds
-            })
+        message = "**Auf dem Digitalen-Brett wurde 1 neuer Artikel veröffentlicht**:\n\n"
+
+    for post in relevantPosts:
+        message += post
+    
+    response = requests.post(os.environ.get("DISCORD_URL"), json={ "content" : message })
