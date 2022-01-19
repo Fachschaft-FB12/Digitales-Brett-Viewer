@@ -16,10 +16,10 @@ jobs:
         with:
           python-version: 3.8
           cache: 'pip'
-      - run: pip install -r /python/requirements.txt
+      - run: pip install -r python/requirements.txt
       - name: execute rssfeed.py
         run: |
-          python /python/rssfeed.py
+          python python/rssfeed.py
         env:
           RSS_URL: "https://brett.fs-matheinfo.de/feed.xml"
           DISCORD_URL: ${{ secrets.DISCORD_WEBHOOK }}
