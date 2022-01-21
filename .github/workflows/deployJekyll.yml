@@ -26,7 +26,11 @@ jobs:
       # Move the data from content to the desired directory    
       - name: Move attachments and posts data
         run: |
+          echo "Show attachments from external repo"
+          ls content/attachments
           mv content/attachments .
+          echo "Show posts from external repo"
+          ls content/* _posts
           mv content/* _posts
 
       - uses: actions/cache@v2
