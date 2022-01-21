@@ -6,6 +6,7 @@ summary:    Du bist zielorientiert, ambitioniert und weist eine analytische Denk
 pdf:        RecipeRegion_Stellenausschreibung_GESUCHT_APP_Entwickler_in.pdf
 tags:       Stellenausschreibung
 color:      666F50
+until:      2022-01-29 12:00:00
 ---
 
 <a class="btn btn-primary" href="{{ site.url }}/attachments/{{page.pdf}}">PDF anzeigen</a>

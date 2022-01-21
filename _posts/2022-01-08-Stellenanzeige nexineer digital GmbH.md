@@ -6,6 +6,7 @@ summary:    nexineer digital ist der digitale Inkubator der KAMAX Gruppe, ein tr
 pdf:        Stellenanzeige nexineer digital GmbH.pdf
 tags:       Stellenausschreibung
 color:      111FFF
+until:      2022-01-16 12:00:00
 ---
 
 <a class="btn btn-primary" href="{{ site.url }}/attachments/{{page.pdf}}">PDF anzeigen</a>

@@ -5,6 +5,7 @@ date:       2022-01-10 13:15:38
 summary:    Aufbau der Hardware, wie z.B. Terminals, Router und systematische Verbindung ...
 pdf:        IT-Stellenangebot.pdf
 tags:		Stellenausschreibung Unternehmen Informatik
+until:      2022-01-23 12:00:00
 ---
 
 {% comment %}
