@@ -30,7 +30,7 @@ jobs:
           ls content/attachments
           mv content/attachments .
           echo "Show posts from external repo"
-          ls content/* _posts
+          ls content/*
           mv content/* _posts
 
       - uses: actions/cache@v2
