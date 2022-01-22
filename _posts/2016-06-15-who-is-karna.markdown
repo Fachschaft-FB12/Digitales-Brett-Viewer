@@ -9,6 +9,7 @@ categories: [one, two]
 color: 1976D2
 author: webjeda
 until:      2022-01-26 12:00:00
+color:      FF12AA
 ---
 Karna is one of the central characters in the Hindu epic Mahābhārata. Karna was one of the greatest warriors, whose martial exploits are recorded in the epic, and the only warrior believed to be able to defeat Arjuna in battle.
 

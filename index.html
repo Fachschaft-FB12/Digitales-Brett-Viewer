@@ -7,41 +7,41 @@ layout: default
   <div class="row">
     {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
     {% for post in paginator.posts %}
-    {% if post.until %}
-     {% capture untiltime %}{{ post.until | date: '%s'}}{% endcapture %}
-    {% else %}
-      {% capture untiltime %}{{ nowunix }}{% endcapture %}
-    {% endif %}
-    {% unless untiltime < nowunix %}
-        <div class="col-12 col-md-6 col-lg-4">
-          <a href="{{ post.url | prepend: site.baseurl }}" class="index-anchor">
-            <div class="card rounded overflow-hidden">  
-              <div class="image">
-                {% if post.image %}
-                <img src="{{post.image | relative_url}}" alt="{{post.title}}">
+      {% if post.until %}
+       {% capture untiltime %}{{ post.until | date: '%s'}}{% endcapture %}
+      {% else %}
+        {% capture untiltime %}{{ nowunix }}{% endcapture %}
+      {% endif %}
+      {% unless untiltime < nowunix %}
+      <div class="col-12 col-md-6 col-lg-4">
+       <a href="{{ post.url | prepend: site.baseurl }}" class="index-anchor"  >
+        <div class="card rounded overflow-hidden" style="background-color:#{{post.color}}">  
+          <div class="image">
+            {% if post.image %}
+            <img src="{{post.image | relative_url}}" alt="{{post.title}}">
+            {% endif %}
+            <div class="card-body">
+              <h4 class="panel-title font-weight-bold">{{ post.title | truncate: 75 }}</h4>
+              <p class="p-0 my-1 mx-0"><span class="post-meta"><small>{{ post.date | date: "%b %-d, %Y" }}</small></span></p>
+               <p>
+                {% if post.summary %}
+                  {{ post.summary | strip_html | strip_newlines | truncate: 150 }}
+                {% else %}
+                  {{ post.excerpt | strip_html | strip_newlines | truncate: 150 }}
                 {% endif %}
-                <div class="card-body">
-                  <h4 class="panel-title font-weight-bold">{{ post.title | truncate: 75 }}</h4>
-                  <p class="p-0 my-1 mx-0"><span class="post-meta"><small>{{ post.date | date: "%b %-d, %Y" }}</small></span></p>
-                  <p>
-                    {% if post.summary %}
-                      {{ post.summary | strip_html | strip_newlines | truncate: 150 }}
-                    {% else %}
-                      {{ post.excerpt | strip_html | strip_newlines | truncate: 150 }}
-                    {% endif %}
-                      <div class="h5">                
-                        {% for tag in post.tags %}
-                          {% if tag %}
-                            <a href="tags/#{{ tag | slugify}}" class="badge badge-pill badge-light">#{{ tag }}</a>
-                          {% endif %}
-                        {% endfor %}
-                      </div>
-                </div>
-              </div>
+                  <div class="h5">                
+                    {% for tag in post.tags %}
+                      {% if tag %}
+                        <a href="tags/#{{ tag | slugify}}" class="badge badge-pill badge-light">#{{ tag }}</a>
+                      {% endif %}
+                    {% endfor %}
+                  </div>
             </div>
-          </a>
+          </div>
         </div>
-        {% endunless %}
+      </a>
+      </div>
+      {% endunless %}
     {% endfor %}
   </div>
 </div> 
