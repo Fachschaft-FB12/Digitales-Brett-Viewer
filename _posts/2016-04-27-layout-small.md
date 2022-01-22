@@ -10,6 +10,7 @@ color: 4CAF50
 author: webjeda
 permalink: /small/
 width: small
+until:      2022-01-23 12:00:00
 ---
 There are 3 types of layouts available for posts and pages. A page can be set to small width by adding front matter ``small`` as shown.
 
