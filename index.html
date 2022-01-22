@@ -5,8 +5,14 @@ layout: default
 <div class="home py-4 py-md-5">
   <br>
   <div class="row">
-    {% assign paginator.posts | where_exp: "post", "post.until < site.time" or "post.until == nil" %}
-    {% for post in paginator.posts %}   
+    {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
+    {% for post in paginator.posts %}
+      {% if post.until %}
+       {% capture untiltime %}{{ post.until | date: '%s'}}{% endcapture %}
+      {% else %}
+        {% capture untiltime %}{{ nowunix }}{% endcapture %}
+      {% endif %}
+      {% unless untiltime < nowunix %}
       <div class="col-12 col-md-6 col-lg-4">
        <a href="{{ post.url | prepend: site.baseurl }}" class="index-anchor">
         <div class="card rounded overflow-hidden">  
