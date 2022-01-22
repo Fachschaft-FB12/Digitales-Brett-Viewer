@@ -15,7 +15,7 @@ layout: default
       {% unless untiltime < nowunix %}
       <div class="col-12 col-md-6 col-lg-4">
        <a href="{{ post.url | prepend: site.baseurl }}" class="index-anchor">
-        <div class="card rounded overflow-hidden">  
+        <div class="card rounded overflow-hidden" style="background-color:#{{post.color}}">  
           <div class="image">
             {% if post.image %}
             <img src="{{post.image | relative_url}}" alt="{{post.title}}">
