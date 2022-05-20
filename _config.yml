@@ -12,7 +12,7 @@ default-image:
 # Build settings
 markdown: kramdown
 permalink: /:title/
-paginate: 48
+paginate: 96
 paginate_path: /page:num/
 
 #social
