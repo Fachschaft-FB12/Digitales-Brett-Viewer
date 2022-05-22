@@ -1,3 +1,4 @@
+from tkinter import W
 import feedparser
 from datetime import datetime,timedelta
 from time import mktime
@@ -11,8 +12,8 @@ relevantPosts = []
 
 for post in xml.entries:
     datePost = datetime.fromtimestamp(mktime(post.published_parsed))
-    twenyFourHoursBack = datetime.now() - timedelta(hours = 24)
-    if(twenyFourHoursBack < datePost):
+    twenyFourHoursBack = datetime.today() - timedelta(days=1)
+    if(twenyFourHoursBack.date() == datePost.date()):
         description = "[" + post.title + "]" + "(<" + post.link + ">)\n"
         description += post.summary + "\n\n"
         relevantPosts.append(description)
@@ -23,7 +24,16 @@ if(len(relevantPosts) > 0):
     else:
         message = "**Auf dem Digitalen-Brett wurde 1 neuer Artikel veröffentlicht**:\n\n"
 
+    listOfRequests = []
     for post in relevantPosts:
+        if(len(message) + len(post) > 2000):
+            listOfRequests.append(message)
+            message = ""
         message += post
-    
-    response = requests.post(os.environ.get("DISCORD_URL"), json={ "content" : message })
+
+    listOfRequests.append(message)
+
+    for request in listOfRequests:
+        requests.post(os.environ.get("DISCORD_URL"), json={ "content" : request })
+
+
