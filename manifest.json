@@ -1,0 +1,23 @@
+{
+  "short_name": "Digitales Brett",
+  "name": "Digitales Brett",
+  "description": "Die Fachschaft erhält in unregelmäßigen Abständen Informationen zu Jobs, Praktika sowie Stipendien, aber auch Veranstaltungen und Ähnlichem von Firmen, Universitäten oder Stiftungen. @Unternehmen und co. wenn Sie Inhalte habe die uns interessieren könnten, können sie uns ein PDF oder Markdown per Mail zukommen lassen. 
+",
+  "icons": [
+    {
+      "src": "/splash-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "/favicon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#ffffff"
+}
