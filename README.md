@@ -9,5 +9,5 @@ Dieses Repository beinhaltet das Jekyll-Theme für das Digitale Brett. Inhalte s
 Transform your plain text into static websites and blogs. https://jekyllrb.com
 
 ## Author
-Robin Schumacher<br>
-Contact for questions info@robin-schumacher.com
+Robin Schumacher - info@robin-schumacher.com<br>
+Please feel free to contact me if you need any information!
